@@ -1,0 +1,66 @@
+.social-group {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+  &--team-change {
+    width: 206px;
+    height: 44px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+  }
+
+  &--join-change {
+    text-align: left;
+    width: 206px;
+    height: 80px;
+  }
+
+  &__item {
+    fill: var(--color-fill-social-link);
+    background-color: #fff;
+    border-radius: 50%;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: #2196f3;
+      fill: var(--color-slogan);
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    &--team-link-change {
+      fill: var(--color-fill-social-link);
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:active {
+        background-color: #2196f3;
+        fill: var(--color-slogan);
+      }
+    }
+
+    &--join-link-change {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: var(--color-slogan);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:active {
+        background-color: var(--color-variable);
+      }
+    }
+  }
+  &__icon {
+    fill: #ffffff;
+  }
+}

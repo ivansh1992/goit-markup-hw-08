@@ -1,0 +1,19 @@
+.button {
+  width: 200px;
+  height: 50px;
+  background: var(--color-variable);
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &__label {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    color: var(--color-slogan);
+  }
+}

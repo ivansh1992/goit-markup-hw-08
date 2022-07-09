@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  list-style: none;
+
+  &__item {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: inline-block;
+    color: #212121;
+    margin: 0 20px;
+  }
+
+  &__link {
+    color: #000;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--active::after {
+      content: "";
+      display: block;
+      position: relative;
+      border-top: 4px solid var(--color-variable);
+      border-radius: 2px;
+      top: 31px;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--color-variable);
+    }
+  }
+}

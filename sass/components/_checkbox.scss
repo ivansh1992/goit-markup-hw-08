@@ -1,0 +1,30 @@
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-right: 14px;
+
+  &--text {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000;
+    border-radius: 2px;
+  }
+}

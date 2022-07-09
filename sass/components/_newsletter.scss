@@ -1,0 +1,61 @@
+.newsletter {
+  text-align: left;
+  margin-left: auto;
+  width: 570px;
+
+  &__h {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-slogan);
+    text-align: left;
+    margin-top: -45px;
+  }
+
+  &__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.newsletter-box {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: var(--color-background);
+    padding-left: 16px;
+    color: #fff;
+    outline: none;
+    margin-top: 20px;
+  }
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+
+  background: var(--color-variable);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  padding: 0;
+  margin-left: 8px;
+  color: #fff;
+  cursor: pointer;
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    margin-left: 24px;
+  }
+}
