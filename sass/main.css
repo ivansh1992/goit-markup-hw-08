@@ -490,11 +490,40 @@
   margin-bottom: -3px;
 }
 
+@media screen and (min-width: 1200px) {
+  /*desktop*/
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  /*tablet*/
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .contact-list__item {
+    margin-bottom: 10px;
+  }
+  .contact-list__mr {
+    margin-left: 0;
+    padding-left: 2px;
+  }
+  .contact-list__link--right {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  /*mobile*/
+  .contact-list {
+    display: none;
+    overflow: hidden;
+  }
+}
 .logo {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
 }
 .logo__link {
@@ -510,6 +539,21 @@
   color: #fff;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  /*tablet*/
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  /*mobole*/
+}
 .nav {
   display: flex;
   list-style: none;
@@ -541,6 +585,12 @@
   color: var(--color-variable);
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .nav {
+    display: none;
+    overflow: hidden;
+  }
+}
 .newsletter {
   text-align: left;
   margin-left: auto;
@@ -827,8 +877,9 @@
 
 .page-header {
   border-bottom: 1px solid #ececec;
-  height: 80px;
+  height: 60px;
   display: flex;
+  z-index: 999;
 }
 .page-header__container {
   display: flex;
@@ -836,4 +887,24 @@
 }
 .page-header__logo {
   margin-right: 73px;
+}
+
+@media screen and (min-width: 1200px) {
+  /*desktop*/
+  .page-header {
+    height: 80px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  /*tablet*/
+  .page-header {
+    height: 80px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  /*mobile*/
+  .page-header {
+    position: fixed;
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
