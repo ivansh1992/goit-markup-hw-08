@@ -165,10 +165,11 @@
 }
 
 .slogan {
-  padding: 200px 0;
+  min-height: 400px;
+  max-width: 100%;
   display: flex;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img.jpg);
-  background-size: 1600px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/banner480x400.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -179,20 +180,65 @@
   align-items: center;
 }
 .slogan__title {
-  font-family: "Roboto";
+  max-width: 365px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.75;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-slogan);
-  width: 700px;
 }
 .slogan__button {
   margin-top: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .slogan {
+    min-height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/banner1600x600.jpg);
+    background-size: 1600px;
+  }
+  .slogan__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  /*tablet*/
+  .slogan {
+    min-height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/banner768x400.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .slogan {
+    padding-top: 60px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+  .slogan {
+    min-height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/banner480x400@2x.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px), screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px), screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+  .slogan {
+    min-height: 400px;
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../image/banner768x400@2x.jpg");
+    background-size: cover;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .slogan {
+    min-height: 600px;
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../image/banner1600x600@2x.jpg");
+    background-size: cover;
+  }
+}
 .button {
   width: 200px;
   height: 50px;
