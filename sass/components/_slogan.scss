@@ -1,12 +1,14 @@
 .slogan {
-  min-height: 400px;
-  max-width: 100%;
   display: flex;
+  min-height: 400px;
+  width: 100%;
+  margin: 0 auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../image/banner480x400.jpg);
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -19,6 +21,9 @@
   }
 
   &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 365px;
     font-weight: 900;
     font-size: 26px;
@@ -27,14 +32,18 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--color-slogan);
+    margin: 0 auto 30px;
   }
 
   &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
-  //desktop
+  /*desktop*/
   .slogan {
     min-height: 600px;
     background-image: linear-gradient(
@@ -66,7 +75,7 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  // mobile
+  /*mobile*/
   .slogan {
     padding-top: 60px;
   }
