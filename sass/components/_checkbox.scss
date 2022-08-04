@@ -1,4 +1,43 @@
 .checkbox {
+  display: inline;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  color: #757575;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000;
+    border-radius: 2px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /*desktop*/
+  .checkbox {
+    display: flex;
+    margin-left: 15px;
+
+    &--text {
+      display: flex;
+
+      align-items: center;
+      cursor: pointer;
+      margin-left: 8px;
+      margin-top: -3px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+/*.checkbox {
   display: flex;
   justify-content: space-between;
   font-family: "Roboto";
@@ -28,3 +67,4 @@
     border-radius: 2px;
   }
 }
+*/

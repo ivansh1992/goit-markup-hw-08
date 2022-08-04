@@ -17,7 +17,9 @@
   &--team-background {
     background: #f5f4fa;
   }
-
+  &--padding-top{
+    padding-top: 0;
+  }
   &__offer {
     display: none;
     
@@ -44,7 +46,9 @@
       color: var(--color-title);
       padding-bottom: 50px;
     }
-  
+    &--padding-top{
+      padding-top: 25px;
+    }
     
   }
 }

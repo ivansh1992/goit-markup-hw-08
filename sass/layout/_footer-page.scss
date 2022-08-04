@@ -2,6 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+  
 
   &__flexible{
     display: flex;
@@ -14,7 +15,7 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   /*tablet*/
   .footer-page{
-
+    
     &__flexible{
       flex-direction: row;
       flex-wrap: wrap;
