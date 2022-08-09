@@ -1,4 +1,4 @@
-.section{
+.section {
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -17,27 +17,24 @@
   &--team-background {
     background: #f5f4fa;
   }
-  &--padding-top{
+  &--padding-top {
     padding-top: 0;
   }
   &__offer {
     display: none;
-    
   }
 }
-
 
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
-  
+
     &__offer {
       display: block;
       overflow: visible;
-      
     }
-  
+
     &__title {
       font-weight: 700;
       font-size: 36px;
@@ -46,24 +43,20 @@
       color: var(--color-title);
       padding-bottom: 50px;
     }
-    &--padding-top{
+    &--padding-top {
       padding-top: 25px;
     }
-    
+    &--team-padding {
+      padding-bottom: 64px;
+    }
   }
 }
 
-
 @media screen and (min-width: 1200px) {
-  
-  
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  
-  
 }
 @media screen and (min-width: 450px) and (max-width: 767px) {
-  
 }
 /*
 .section {
