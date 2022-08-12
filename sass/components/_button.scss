@@ -5,13 +5,18 @@
   justify-content: center;
   align-items: center;
   background: var(--color-variable);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   border-radius: 4px;
   border: 0;
   padding: 0;
   margin-left: 8px;
   color: #fff;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 
   &__label {
     font-family: "Roboto";
@@ -21,5 +26,31 @@
     line-height: 1.8;
     letter-spacing: 0.06em;
     color: var(--color-slogan);
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    margin-left: 24px;
+  }
+  &--newsletter {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  &--slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &--acception__submit {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
   }
 }
